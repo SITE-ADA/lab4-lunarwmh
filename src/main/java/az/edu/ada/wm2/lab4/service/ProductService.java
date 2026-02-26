@@ -11,6 +11,9 @@ public interface ProductService {
     Product getProductById(UUID id);
     List<Product> getAllProducts();
     Product updateProduct(UUID id, Product product);
+
+    Product updateProduct(Product product);
+
     void deleteProduct(UUID id);
     List<Product> getProductsExpiringBefore(LocalDate date);
     List<Product> getProductsByPriceRange(BigDecimal minPrice, BigDecimal maxPrice);
